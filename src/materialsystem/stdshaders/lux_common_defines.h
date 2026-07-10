@@ -17,8 +17,8 @@
 //				
 //==========================================================================//
 
-// #define SDK2013SP
-#define TF2SDK
+ #define SDK2013SP
+//#define TF2SDK
 // #define ASWSDK
 // #define SFM_COMPATIBILITY
 
@@ -38,7 +38,7 @@
 #define LUX_DEBUGCONVARS
 
 // Only for builds with PBR:
-#define PBR_ENABLE
+//#define PBR_ENABLE
 
 // TF2SDK Only:
 // Replace one or more existing Shaders with those available in LUX
@@ -54,6 +54,7 @@
 
 // If you only want to replace *some* of them, do it here
 #ifndef REPLACE_ALL_SHADERS
+/*
 #define REPLACE_LIGHTMAPPEDGENERIC
 #define REPLACE_LIGHTMAPPEDGENERIC_DECAL
 #define REPLACE_LIGHTMAPPEDREFLECTIVE
@@ -78,19 +79,20 @@
 #define REPLACE_REFRACT
 #define REPLACE_EYES
 #define REPLACE_ENGINE_POST
+*/
 
 // This is a very safe 'replace'
 // This Shader only exists since L4D2 onwards ( P2, CS:GO )
-#define REPLACE_BLACK
+//#define REPLACE_BLACK
 
 // Another safe 'replace'
 // This Shader only exists in Left 4 Dead 2
-#define REPLACE_INFECTED
+//#define REPLACE_INFECTED
 
 // safe 'replace'(?)
 // It doesn't appear the original Shaders can even be used ( their ConVars do nothing )
 // This is intended as Stubs for Linux. Linux does not have stdshader_dbg, so all of the Shaders under this Directive are just missing on LINUX
-#define REPLACE_DEBUGSHADERS
+//#define REPLACE_DEBUGSHADERS
 
 // Not functional right now:
 // #define REPLACE_EYEREFRACT
