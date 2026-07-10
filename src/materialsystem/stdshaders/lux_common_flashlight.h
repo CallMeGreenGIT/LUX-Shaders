@@ -370,6 +370,9 @@ float3 ComputeProjectedTextureDiffuse(float3 f3WorldPos, float3 f3NormalWS, cons
 	// Perspective Divide is a must
 	float3 f3ProjPos = f4ProjTexPos.xyz / f4ProjTexPos.www;
 
+	float2 tmp = max(-f3ProjPos.xy, f3ProjPos.xy - 1);
+	clip(-max(tmp.x, tmp.y));
+
 	// Color * Cookie
 	float3 f3ProjTexColor = g_f3ProjTexColor * tex2D(Sampler_FlashlightCookie, f3ProjPos.xy).rgb;
 
