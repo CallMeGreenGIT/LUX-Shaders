@@ -7,12 +7,12 @@
 rem sourcedir = Where to compile Shaders to ( shaders\ )
 rem targetdir = Where to copy compiled Shaders to ( game\..\shaders\ )
 set sourcedir="shaders"
-set targetdir="..\..\..\game\mod_tf\shaders"
+set targetdir="..\..\..\game\mod_epsiodic\shaders"
 
 rem SOURCE_DIR = Source Code Root ( src\ )
 rem GAME_DIR = Mod Folder with GameInfo.txt
 set SOURCE_DIR="..\..\"
-set GAME_DIR="..\..\..\game\mod_tf"
+set GAME_DIR="..\..\..\game\mod_episodic"
 
 rem Process Names we will try to call to ask for Shader reloads
 rem Will check in Order
